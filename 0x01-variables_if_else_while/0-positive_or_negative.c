@@ -5,7 +5,7 @@
 /**
  * main - entry poin
  *
- * the number positive or negative
+ * Description: true or false 
  *
  * return always (0);
 */
