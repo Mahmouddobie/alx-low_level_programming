@@ -1,31 +1,35 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
- * main - prints all possible combinations of two different digits.
- *	in ascending order, separated by comma followed by a space.
+ * main - A program that prints combination of all two digit numbers.
  *
- * Return: 0 (success)
-*/
-
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	int digit, digit2;
 
-	for (digit = 0; digit <= 9; digit++)
+	int num = 0;
+	int tens;
+	int ones;
+
+	while (num <= 99)
 	{
-		for (digit2 = digit + 1; digit2 <= 10; digit2++)
+		tens = num % 10;
+		ones = num / 10;
+
+		if (ones < tens)
 		{
-			putchar((digit % 10) + '0');
-			putchar((digit2 % 10) + '0');
-
-			if (digit == 8 && digit2 == 9)
-				continue;
-
-			putchar(',');
-			putchar(' ');
+			putchar(ones + '0');
+			putchar(tens + '0');
+			if (num < 89)
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
-
-	putchar('\n');
+		num++;
 	}
+	putchar('\n');
+
 	return (0);
 }
