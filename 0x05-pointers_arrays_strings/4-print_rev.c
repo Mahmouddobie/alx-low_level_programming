@@ -8,9 +8,10 @@
 
 void print_rev(char *s)
 {
-	for (int i = s[i] - 1; s[i] > 0; i--)
+	for (int i = s[i] - 1; s[i] > 0; i++)
 	{
 		putchar(s[i]);
+		i--;
 	}
 	putchar('\n');
 }
