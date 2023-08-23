@@ -1,16 +1,15 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * puts2 - prints every character of a string by new line
- * @str: the string containing character.
- *
-*/
-
+ * puts2 - prints one char out of 2 of a string
+ * followed by a new line
+ * @str: string to print the chars from
+ */
 void puts2(char *str)
 {
-	int i;
-	int l;
+	int l, i;
+
+	l = 0;
 
 	while (str[l] != '\0')
 	{
@@ -21,5 +20,6 @@ void puts2(char *str)
 	{
 		putchar(str[i]);
 	}
+
 	putchar('\n');
 }
