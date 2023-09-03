@@ -18,11 +18,8 @@ int main(int argc, char *argv[])
 		for (*ch; ch == argv[argc]; ch++)
 		{
 			if (*ch < '0' || *ch > '9')
-			{
-				printf("Error\n");
-				return (1);
-			}
-			sum += atoi(argv[argc]);
+				return (printf("Error\n"), 1);
+		sum += atoi(argv[argc]);
 		}
 	}
 	printf("%d\n", sum);
