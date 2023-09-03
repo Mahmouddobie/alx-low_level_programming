@@ -19,7 +19,8 @@ int main(int argc, char *argv[])
 			if (*ch < '0' || *ch > '9')
 				return (printf("Error\n"), 1);
 		sum += atoi(argv[argc]);
-	}
+	
 	printf("%d\n", sum);
+	}
 	return (0);
 }
