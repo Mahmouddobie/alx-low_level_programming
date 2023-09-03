@@ -19,10 +19,9 @@ int main(int argc, char **argv)
 		return (1);
 	}
 
-	else
-		mul = atoi(argv[1]);
-		i = atoi(argv[2]);
-		printf("%d\n", mul * i);
+	mul = atoi(argv[1]);
+	i = atoi(argv[2]);
+	printf("%d\n", mul * i);
 
 	return (0);
 }
