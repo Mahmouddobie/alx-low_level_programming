@@ -8,14 +8,14 @@
  *
  * Return: return (0) (success)
 */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
 	int sum = 0;
 	char *ch;
 
 	while (--argc)
 	{
-		for (ch == argv[argc]; *ch; ch++)
+		for (*ch; ch == argv[argc]; ch++)
 		{
 			if (*ch < '0' || *ch > '9')
 			{
