@@ -11,12 +11,11 @@
 
 int main(int argc, char **argv)
 {
-	int i, j, mul;
+	int i, mul;
 
-	j = atoi(argv[1]);
+	mul = atoi(argv[1]);
 	i = atoi(argv[2]);
-	mul = j * i;
-	printf("%d\n", mul);
+	printf("%d\n", mul * i);
 
 	if (argc > 3)
 	{
